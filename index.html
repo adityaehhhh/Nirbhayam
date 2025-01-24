@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Safe Steps</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    
+
+      <div id="loginPage" class="overlay">
+        <form id="loginForm">
+          <h2>Welcome to Nirbhayam</h2>
+          <p>Please login to proceed:</p>
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required>
+          <label for="emergencyContact">Emergency Contact Number:</label>
+          <input type="tel" id="emergencyContact" name="emergencyContact" required>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+
+      <div id="mainContent" style="display: none;">
+      <div class="wrapper">
+      <div class="container">
+        <img src="safestep.jpg" class="background" />
+        <h1 class="title">Nirbhayam</h1>
+        <h4 class="title"> [ An AI-Powered Companion for Women’s Safety ]</h4>
+        
+        <h2 class="shloka" id="safe">नारीणां यत्र पूज्यन्ते रमन्ते तत्र देवताः।
+          नारीनां च अपमानं, अशुभं तत्र जायते।
+        </h2>
+
+        <p class="shloka" id="book">~मनुस्मृति, अध्याय 3, श्लोक 56</p>
+      </div>
+
+      <section>
+        <h3 class="secHeading"><u>Introduction to Nirbhayam</u></h3>
+        <p class="text">
+          Nirbhayam is an innovative mobile application dedicated to enhancing women’s 
+          safety by combining advanced technology with practical tools for everyday use. 
+          The app acts as a reliable companion, empowering women to navigate their surroundings confidently and securely.
+          <br />
+          <br />
+          It leverages real-time data, predictive analytics, and community engagement to create a safer environment, 
+          offering features such as safe route tracking, emergency assistance, and self-defense resources. 
+          Nirbhayam aims to make personal safety accessible, proactive, and empowering, allowing women to reclaim 
+          their independence without fear.
+        </p>
+
+        <div class="bg bg1">
+          <a class="map" href="area.html" target="_blank"><h2 class="desc">Know Your Area</h2></a>
+        </div>
+        <h3 class="secHeading"><u>Know Your Area</u></h3>
+        <p class="text">
+          The "Know Your Area" feature is at the heart of Nirbhayam, designed to help women navigate their environment 
+          with a clear understanding of safety conditions. This section provides users with real-time safety ratings 
+          for different areas based on various factors, including crime data, lighting conditions, and community reports.
+          <br />
+          <br />
+          It also offers a safe route planner that suggests the most secure paths for walking, driving, or using public 
+          transport. Dynamic alerts keep users updated on potential risks such as accidents, protests, or hazardous zones, 
+          enabling them to make informed decisions on the go. This feature ensures every journey is planned with safety as 
+          the top priority, empowering users to travel with confidence.
+        </p>
+
+        <div class="bg bg2">
+          <a class="map" href="shaktipath.html" target="_blank"><h2 class="desc">The Shakti Path</h2></a>
+        </div>
+        <h3 class="secHeading"><u>The Shakti Path</u></h3>
+        <p class="text">
+          Nirbhayam extends its support beyond technology by equipping women with practical knowledge and skills through 
+          the Workshops and Daily Self-Defense tab. This section offers daily tips and video tutorials on essential 
+          self-defense techniques, enabling users to protect themselves in threatening situations. 
+          <br />
+          <br />
+          Additionally, it provides access to live virtual workshops led by certified trainers, covering topics such as 
+          situational awareness, personal safety strategies, and mental resilience. Users can also explore legal resources 
+          to understand their rights and navigate the legal system effectively. By blending education, empowerment, and actionable 
+          strategies, this tab ensures women are prepared to face challenges both physically and mentally.
+        </p>
+
+        <div class="bg bg3">
+          <h2 class="desc">Impact Tracker</h2>
+        </div>
+        <h3 class="secHeading"><u>Impact Tracker</u></h3>
+        <p class="text">
+          The "Impact Tracker" is a feature designed to empower users by allowing them to highlight and upvote safety issues within their community,
+           ensuring that accountability is driven by the collective input of the community. This functionality fosters active participation and 
+           collaboration, enabling individuals to draw attention to specific concerns like damaged streetlights or areas in need of increased police 
+           patrols. The tracker not only helps in raising awareness but also plays a crucial role in monitoring the effectiveness of reported safety 
+           measures. For instance, once a safety issue, such as a broken streetlight, is fixed, users can track the progress and assess the impact 
+           of the corrective action. Similarly, if additional police patrols are implemented in response to community concerns, the tracker allows 
+           users to evaluate how these measures contribute to improving safety, ensuring that necessary actions are being taken and that public 
+           safety continues to improve through a transparent, community-driven approach.
+        </p>
+      </section>
+    </div>
+
+    <button id="sosButton">
+      <img src="emergency-call.png" alt="Emergency SOS" class="sos-icon">
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+
+  </body>
+</html>

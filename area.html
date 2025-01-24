@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TomTom Heatmap Example</title>
+    <!-- Include TomTom Maps SDK -->
+    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.23.0/maps/maps-web.min.js"></script>
+    <link href="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.23.0/maps/maps.css" rel="stylesheet" type="text/css">
+    <style>
+        /* Fullscreen map */
+        #map {
+            height: 100vh;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <script>
+        // Initialize the TomTom map
+        const map = tt.map({
+            key: 'F1rrGQCS9lK5NTmyULz2GzhyeTyVc6cS', // Replace with your TomTom API key
+            container: 'map', // The ID of the div where the map will appear
+            center: [77.2090, 28.6139], // Delhi coordinates (longitude, latitude)
+            zoom: 13
+        });
+
+        // Example data points for the heatmap (longitude, latitude, intensity)
+        const heatmapData = [
+            { lng: 77.2090, lat: 28.6139, intensity: 0.8 }, // High intensity
+            { lng: 77.2190, lat: 28.6239, intensity: 0.6 },
+            { lng: 77.1990, lat: 28.6039, intensity: 0.7 },
+            { lng: 77.2090, lat: 28.5939, intensity: 0.4 },
+            { lng: 77.1890, lat: 28.6239, intensity: 0.9 }
+        ];
+
+        // Create a GeoJSON object for the heatmap data
+        const geoJsonData = {
+            type: 'FeatureCollection',
+            features: heatmapData.map(point => ({
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [point.lng, point.lat]
+                },
+                properties: {
+                    intensity: point.intensity
+                }
+            }))
+        };
+
+        // Add GeoJSON data to the map as a source
+        map.on('load', function() {
+            map.addSource('heatmap-data', {
+                type: 'geojson',
+                data: geoJsonData
+            });
+
+            // Add a circle layer to represent the heatmap points
+            map.addLayer({
+                id: 'heatmap-layer',
+                type: 'circle',
+                source: 'heatmap-data',
+                paint: {
+                    'circle-radius': {
+                        stops: [
+                            [0, 1], // Low zoom: smaller radius
+                            [20, 20] // High zoom: larger radius
+                        ]
+                    },
+                    'circle-color': [
+                        'interpolate',
+                        ['linear'],
+                        ['get', 'intensity'],
+                        0, 'rgba(0, 0, 255, 0)', // No intensity (transparent)
+                        1, 'rgba(255, 0, 0, 1)'  // Maximum intensity (red)
+                    ],
+                    'circle-opacity': 0.6
+                }
+            });
+        });
+    </script>
+</body>
+</html>

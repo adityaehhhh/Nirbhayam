@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safe Steps</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  <div id="loginPage" class="overlay">
+    <form id="loginForm">
+      <h2>Welcome to Safe Steps</h2>
+      <p>Please login to proceed:</p>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+      <label for="emergencyContact">Emergency Contact Number:</label>
+      <input type="tel" id="emergencyContact" name="emergencyContact" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <div id="mainContent" style="display: none;">
+    <div class="wrapper">
+      <h1>Welcome to Nirbhayam</h1>
+      <p>Your safety companion powered by AI.</p>
+    </div>
+
+    <button id="sosButton">
+      <img src="emergency-call.png" alt="Emergency SOS" class="sos-icon">
+    </button>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
