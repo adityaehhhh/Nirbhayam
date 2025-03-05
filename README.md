@@ -56,6 +56,16 @@ o Real-Time Data: Tom Tom API, OpenStreetMap, and WebSockets
 o AI & Analytics: Python (TensorFlow, Scikit-learn), Predictive Modeling Algorithms 
 o Cloud Infrastructure: AWS (S3, Lambda), Firebase (for real-time updates) 
 
+## Screenshots
+![Frontend](Screenshot 2025-03-05 232424.png) <br>
+<br>
+![Frontend](Screenshot 2025-03-05 232444.png) <br>
+<br>
+![Frontend](Screenshot 2025-03-05 232504.png) <br>
+<br>
+![Frontend](Screenshot 2025-03-05 232524.png) <br>
+<br>
+
 Expected Outcome : 
 o Reduction in reported incidents of harassment and violence in pilot areas. 
 o Increased community engagement through crowd-sourced safety reports. 
