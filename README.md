@@ -60,11 +60,19 @@ o Cloud Infrastructure: AWS (S3, Lambda), Firebase (for real-time updates)
 ## Screenshots
 ![Image](https://github.com/user-attachments/assets/22810ff8-52ac-4aa7-ae96-b37f6e321717)
 <br>
+<br>
+<br>
 ![Image](https://github.com/user-attachments/assets/7b144bd6-92f5-4f84-a626-cd4d6685b40b)
+<br>
+<br>
 <br>
 ![Image](https://github.com/user-attachments/assets/2f489d27-3d62-4d7c-910e-a4835320c1b3)
 <br>
+<br>
+<br>
 ![Image](https://github.com/user-attachments/assets/cfb38041-b761-41b9-b7e2-0cbcf0e950cf)
+<br>
+<br>
 <br>
 
 ## Expected Outcome : 
