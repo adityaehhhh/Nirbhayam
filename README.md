@@ -1,15 +1,16 @@
 # nirbhayam
 Working on this project for my idea that I present in  Smart India Ideathon 2025.......................
 
-Problem Statement : 
+## Problem Statement : 
 Women’s safety remains a critical issue, with systemic gaps in real-time risk management, 
 community participation, and policy awareness. Current solutions often fail to holistically 
 address physical safety, legal education, and collective accountability. How can we leverage 
 technology to provide women with safer spaces, actionable insights, and a sense of 
 empowerment?
 
-What I aim to make ?
-Key Features : 
+## What I aim to make ?
+##Key Features : 
+
 1. Dynamic Safety Index for Locations : 
 o Interactive Map: A real-time safety index displayed for different locations 
 based on live data from CCTV networks, crime reports, lighting conditions, and 
@@ -48,7 +49,7 @@ o Users can highlight & upvote issues, ensuring community-driven accountability.
 o Monitor the effectiveness of reported safety measures, such as fixing broken 
 streetlights or increasing police patrols.
 
-Technology Stack : 
+## Technology Stack : 
 o Frontend: React.js, Tailwind CSS 
 o Backend: Node.js, Express.js 
 o Database: MongoDB 
@@ -57,16 +58,8 @@ o AI & Analytics: Python (TensorFlow, Scikit-learn), Predictive Modeling Algorit
 o Cloud Infrastructure: AWS (S3, Lambda), Firebase (for real-time updates) 
 
 ## Screenshots
-![Frontend](Screenshot 2025-03-05 232424.png) <br>
-<br>
-![Frontend](Screenshot 2025-03-05 232444.png) <br>
-<br>
-![Frontend](Screenshot 2025-03-05 232504.png) <br>
-<br>
-![Frontend](Screenshot 2025-03-05 232524.png) <br>
-<br>
 
-Expected Outcome : 
+## Expected Outcome : 
 o Reduction in reported incidents of harassment and violence in pilot areas. 
 o Increased community engagement through crowd-sourced safety reports. 
 o Enhanced user confidence and adoption rates measured through surveys.
